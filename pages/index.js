@@ -2,13 +2,14 @@ import Link from "next/link";
 import styles from "../styles/home.module.scss";
 import useMediaQuery, { mobileBreakpoint } from "../modules/device";
 
+import Meta from "../components/Meta";
 import Gooey from "../components/Gooey";
 
 export default function Home() {
   const mobile = useMediaQuery(mobileBreakpoint);
 
   return (
-    <>
+    <Meta>
       <div className={styles.main}>
         <Gooey mobile={mobile} />
         <div className={styles.footer}>
@@ -85,6 +86,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </>
+    </Meta>
   );
 }
