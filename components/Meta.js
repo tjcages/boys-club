@@ -6,7 +6,7 @@ const Meta = (props) => {
   const description =
     props.description ??
     "We’re a social DAO, product studio, and media company for the new internet";
-  const image = props.image ?? "/preview.jpeg";
+  const image = props.image ?? "/preview.jpg";
   const url = props.url ?? "https://boysclub.vip/";
 
   const [faviconHref, setFaviconHref] = useState("/favicon.ico");
